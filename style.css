@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('ev_background.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+.nav {
+    margin-top: 20px;
+}
+.nav a {
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
