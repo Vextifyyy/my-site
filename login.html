@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Futuristic EVs</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="tesla">
+        <img src="/images/image3.jpg">
+      </div>
+      <div class="logo">
+        <img src="/images/image2.png">
+    <div>
+    </div>
+    <div class="login-box">
+        <h2>Please login here</h2>
+        <input type="text" id="email" placeholder="Email address">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login now</button>
+    </div>
+    <div class="logo" onclick="goHome()"><img src="/images/image2.png"></div>
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+        }
+
+        function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            
+            if (email.includes("@") && email.includes(".")) {
+                if (password) {
+                    alert("Login successful! Returning to homepage.");
+                    window.location.href = "index.html?loggedin=true";
+                } else {
+                    alert("Please enter your password.");
+                }
+            } else {
+                alert("Invalid email address. Please enter a valid email.");
+            }
+        }
+    </script>
+</body>
+</html>
